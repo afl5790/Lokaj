@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter number="1"> 
+    <title>Introduction</title> 
+
+    <paragraph> 
+        The <person name="Time Traveller" role="protagonist">Time Traveller</person> 
+        (for so it will be convenient to speak of him) was expounding a recondite matter to us.  
+        His pale grey eyes shone and twinkled, and his usually pale face was flushed and  
+        animated with an <emotion type="excitement">eager excitement</emotion>.  
+        The fire burnt brightly, and the soft radiance of the incandescent lights  
+        in the <place type="structure" name="drawing room">lilies of silver</place>  
+        caught the bubbles that flashed and passed in our glasses. 
+    </paragraph> 
+
+    <dialog> 
+        <speaker> 
+            <person name="Time Traveller" role="protagonist">
+                You must follow me carefully. I shall have to controvert one or two ideas that are  
+                almost universally accepted. 
+            </person> 
+        </speaker> 
+        <speaker> 
+            <person name="Filby" role="skeptic"> 
+                Is not that rather a large thing to expect us to begin upon? 
+            </person> 
+        </speaker> 
+        <speaker> 
+            <person name="Time Traveller" role="protagonist"> 
+                The geometry, for instance, they taught you at school is founded on a misconception. 
+            </person> 
+        </speaker> 
+    </dialog> 
+
+    <paragraph> 
+        The <person name="Time Traveller" role="inventor">proposed</person> an  
+        <invention name="Time Machine">invention</invention> that could make use of  
+        this <theory>Theory of the Fourth Dimension</theory>, allowing for travel  
+        through this fourth dimension—Time itself. 
+    </paragraph> 
+
+    <dialog> 
+        <speaker> 
+            <person name="Filby" role="questioner">
+                But how can we move through Time?
+            </person> 
+        </speaker> 
+        <speaker> 
+            <person name="Time Traveller" role="visionary"> 
+                Ah, that is where my machine comes in. For time, as we understand it,  
+                is only a kind of Space. 
+            </person> 
+        </speaker> 
+    </dialog> 
+</chapter>
