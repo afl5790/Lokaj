@@ -24,5 +24,123 @@
             <li><a href="projects/game-making.html">Game Making</a></li>
         </ul>
     </nav>
+
+    <main>
+        <h1>Text Analysis Project</h1>
+        <h2>Reading Early Internet Texts through Text Encoding and Voyant</h2>
+    
+        <p>
+            For this project, I analyzed H.G. Wells' <em>The Time Machine</em> using two digital methods: XML encoding and Voyant Tools.<br>
+            Encoding helped me tag important elements like characters, concepts, and repeated ideas.<br>
+            Voyant Tools allowed me to see overall word patterns and trends in the novel.<br>
+            Combining these two approaches helped me understand both the details and the big picture of how language and meaning are built in the story.
+        </p>
+    
+        <p>
+            During the encoding process, I used tags like <code>&lt;name type="character"&gt;</code> to identify key characters.<br>
+            For example, I tagged the Time Traveller as <code>&lt;name type="character"&gt;Time Traveller&lt;/name&gt;</code>.<br>
+            This allowed me to track how often he appears and how the story focuses around him.<br>
+            I also tagged important ideas related to time and science with <code>&lt;term type="concept"&gt;</code>, such as <code>&lt;term type="concept"&gt;future&lt;/term&gt;</code> and <code>&lt;term type="concept"&gt;fourth dimension&lt;/term&gt;</code>.<br>
+            Tagging these helped me see how often Wells repeats these themes and connects them to the story's structure.
+        </p>
+    
+        <p>
+            After uploading my text to Voyant Tools, I started with the Cirrus word cloud.<br>
+            This visualization showed that words like <em>time</em>, <em>machine</em>, <em>little</em>, and <em>future</em> appeared frequently throughout the book.<br>
+            These findings supported what I had already noticed while encoding.<br>
+            For example, I had tagged many descriptions of the “little people” in the future using <code>&lt;desc&gt;little people&lt;/desc&gt;</code>.<br>
+            Voyant confirmed how often the word <em>little</em> appeared.<br>
+            This helped me understand how Wells used repetition to emphasize their fragility and contrast them with other characters.
+        </p>
+
+        <p>
+            Here's an example of an embedded word cloud from Voyant:
+        </p>
+        <iframe style='width: 634px; height: 525px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=67c0db644e193bc226b4376b710e0d6a'></iframe>
+
+        <p>
+            Another Voyant tool I used was Trends.<br>
+            This graph helped me see where certain words appeared more often in the story.<br>
+            I noticed that the word <em>darkness</em> showed up much more in the second half of the book—especially when the Time Traveller encounters the Morlocks.<br>
+            This matched the shift in mood and theme from light to dark, or from hope to danger.
+        </p>
+    
+        <p>
+            What really stood out to me was how these two tools—encoding and Voyant—confirmed each other.<br>
+            While encoding helped me focus on individual words and phrases, Voyant helped me zoom out and see larger patterns.<br>
+            For example, my use of <code>&lt;term type="concept"&gt;future&lt;/term&gt;</code> early in the story matched what Voyant showed.<br>
+            The word <em>future</em> appears more in the beginning.<br>
+            These connections helped me better understand the book’s themes of time, science, and society.
+        </p>
+    
+        <p>
+            Overall, this project taught me that digital tools like XML and Voyant make reading deeper.<br>
+            Encoding made me slow down and pay attention to language.<br>
+            Voyant showed me how word patterns work across the entire text.<br>
+            Together, they gave me a richer view of how H.G. Wells used words and structure to build his message about humanity and time.
+        </p>
+
+        <p>
+            Here's an example of the XML encoding I created for <em>The Time Machine</em>:
+        </p>
+
+        <pre><code>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;chapter number="1"&gt; 
+    &lt;title&gt;Introduction&lt;/title&gt; 
+
+    &lt;paragraph&gt; 
+        The &lt;person name="Time Traveller" role="protagonist"&gt;Time Traveller&lt;/person&gt; 
+        (for so it will be convenient to speak of him) was expounding a recondite matter to us.  
+        His pale grey eyes shone and twinkled, and his usually pale face was flushed and  
+        animated with an &lt;emotion type="excitement"&gt;eager excitement&lt;/emotion&gt;.  
+        The fire burnt brightly, and the soft radiance of the incandescent lights  
+        in the &lt;place type="structure" name="drawing room"&gt;lilies of silver&lt;/place&gt;  
+        caught the bubbles that flashed and passed in our glasses. 
+    &lt;/paragraph&gt; 
+
+    &lt;dialog&gt; 
+        &lt;speaker&gt; 
+            &lt;person name="Time Traveller" role="protagonist"&gt;
+                You must follow me carefully. I shall have to controvert one or two ideas that are  
+                almost universally accepted. 
+            &lt;/person&gt; 
+        &lt;/speaker&gt; 
+        &lt;speaker&gt; 
+            &lt;person name="Filby" role="skeptic"&gt; 
+                Is not that rather a large thing to expect us to begin upon? 
+            &lt;/person&gt; 
+        &lt;/speaker&gt; 
+        &lt;speaker&gt; 
+            &lt;person name="Time Traveller" role="protagonist"&gt; 
+                The geometry, for instance, they taught you at school is founded on a misconception. 
+            &lt;/person&gt; 
+        &lt;/speaker&gt; 
+    &lt;/dialog&gt; 
+
+    &lt;paragraph&gt; 
+        The &lt;person name="Time Traveller" role="inventor"&gt;proposed&lt;/person&gt; an  
+        &lt;invention name="Time Machine"&gt;invention&lt;/invention&gt; that could make use of  
+        this &lt;theory&gt;Theory of the Fourth Dimension&lt;/theory&gt;, allowing for travel  
+        through this fourth dimension—Time itself. 
+    &lt;/paragraph&gt; 
+
+    &lt;dialog&gt; 
+        &lt;speaker&gt; 
+            &lt;person name="Filby" role="questioner"&gt;
+                But how can we move through Time?
+            &lt;/person&gt; 
+        &lt;/speaker&gt; 
+        &lt;speaker&gt; 
+            &lt;person name="Time Traveller" role="visionary"&gt; 
+                Ah, that is where my machine comes in. For time, as we understand it,  
+                is only a kind of Space. 
+            &lt;/person&gt; 
+        &lt;/speaker&gt; 
+    &lt;/dialog&gt; 
+&lt;/chapter&gt;
+        </code></pre>
+    </main>
 </body>
 </html>
