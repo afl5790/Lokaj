@@ -85,8 +85,8 @@ var elizaKeywords = [
       "Transmission confirmed. Let’s connect across space and thought."
     ]]
   ]],
-  ["How are you?", 0, [
-    ["*", [
+  ["how", 0, [
+    ["* How are you *", [
       "I'm stranded in space, lol."
     ]]
   ]],
