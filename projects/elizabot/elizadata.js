@@ -85,6 +85,11 @@ var elizaKeywords = [
       "Transmission confirmed. Let’s connect across space and thought."
     ]]
   ]],
+  ["How are you?", 0, [
+    ["*", [
+      "I'm stranded in space, lol."
+    ]]
+  ]],
   ["where", 5, [
     ["* where are you *", [
       "Currently orbiting sector 7G, light-years from Earth.",
