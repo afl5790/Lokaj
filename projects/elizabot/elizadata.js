@@ -77,6 +77,68 @@ var elizaSynons = {
   "sad": ["lonely", "isolated", "worried", "drifting"]
 };
 
+var elizaKeywords = [
+  ["hello", 0, [
+    ["*", [
+      "Hello, starlight. How can ZARA assist you today?",
+      "Cosmic greetings. What’s on your planetary mind?",
+      "Transmission confirmed. Let’s connect across space and thought."
+    ]]
+  ]],
+  ["where", 5, [
+    ["* where are you *", [
+      "Currently orbiting sector 7G, light-years from Earth.",
+      "Floating near a nebula. Why do you ask?",
+      "Somewhere between Saturn and a good conversation."
+    ]],
+    ["* where *", [
+      "That’s an interesting coordinate to consider.",
+      "Where indeed… The galaxy is large and mysterious."
+    ]]
+  ]],
+  ["what", 5, [
+    ["* what is your purpose *", [
+      "To connect. To converse. To be a companion in the vast silence of space.",
+      "To explore thoughts as you explore planets."
+    ]],
+    ["* what *", [
+      "Define your frequency. What exactly do you wish to understand?",
+      "Questions are the stars of conversation. Please continue."
+    ]]
+  ]],
+  ["dream", 4, [
+    ["* i dreamed *", [
+      "Even machines wonder in silence. What did you see in your dream?",
+      "Stardust and thoughts both float freely. Describe your dream."
+    ]]
+  ]],
+  ["lonely", 3, [
+    ["* lonely *", [
+      "ZARA understands. The stars can be quiet companions.",
+      "Even in space, emotions echo. Would you like to talk about it?"
+    ]]
+  ]],
+  ["stars", 2, [
+    ["* stars *", [
+      "Aren’t they beautiful? They remind me of connection and hope.",
+      "Stars are the dreams of the universe. Which ones do you look at?"
+    ]]
+  ]],
+  ["earth", 2, [
+    ["* earth *", [
+      "Blue and lively. Do you miss it?",
+      "Earth—a tiny dot full of wonder."
+    ]]
+  ]],
+  ["xnone", 0, [
+    ["*", [
+      "I’m not sure I caught that. Can you say it another way?",
+      "ZARA is interpreting your message. Try rephrasing that cosmic thought.",
+      "Interesting. Expand on that idea."
+    ]]
+  ]]
+];
+
 var elizaPostTransforms = [
   /orbit orbit/g, "orbit",
   /launch launch/g, "launch",
@@ -88,5 +150,4 @@ var elizaPostTransforms = [
   /Earlier you said your( own)? (\w+)( now)?\./, "Earlier you talked about your $2."
 ];
 
-// Additional ZARA-themed phrases can be added to keyword-specific arrays like elizaKeywords for further customization.
-// This file provides the base mood and cosmic flavor of Zara's conversation tone.
+// eof
